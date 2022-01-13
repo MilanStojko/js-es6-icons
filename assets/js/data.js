@@ -125,7 +125,6 @@ getBoxesCode(filtro.value);
 
 function getBoxesCode (filtro){
 	icone.forEach((elemento) =>{
-		console.log(elemento)
 		if((elemento.type == filtro) || (filtro == "all")) {
 			contenitore.innerHTML += getBoxCode(elemento);
 		}
@@ -134,9 +133,12 @@ function getBoxesCode (filtro){
 
 function getBoxCode(icona){
 	const {name, prefix, family, color} = icona;
-	console.log(icona);
-		`<div class="box">
-		<i class= "${family} ${prefix} ${name}" style="${color}"></i>
-		<div class"">${name}</div>
-		</div>`;
-	}
+	let risultato = 
+	`
+	<div class="box">
+	<i class= "${family} ${prefix}${name}" style="${color}"></i>
+	<div class"">${name}</div>
+	</div>
+	`;
+	return risultato;
+}
