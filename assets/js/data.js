@@ -133,11 +133,12 @@ function getBoxesCode (filtro){
 
 function getBoxCode(icona){
 	const {name, prefix, family, color} = icona;
-	let risultato = 
-	`
-	<div class="box">
-	<i class= "${family} ${prefix}${name}" style="${color}"></i>
-	<div class"">${name}</div>
+	let risultato = `
+	<div class="iconecontainer">
+		<div class = "icona">
+			<i class= "${family} ${prefix}${name}" style="color:${color}"></i>
+			<h2 class"">${name}</h2>
+			</div>
 	</div>
 	`;
 	return risultato;

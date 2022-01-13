@@ -19,8 +19,12 @@
 }
 .icona{
     padding: 2rem 3.2rem;
+    width: 80%;
     border: solid 1px black;
     border-radius: 10px;
     box-shadow: 1px 1px gainsboro;
     text-align: center;
+}
+.icona i{
+    font-size: 3rem;
 }
